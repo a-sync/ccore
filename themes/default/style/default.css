@@ -1,0 +1,591 @@
+/*
+CMS api
+default theme
+*/
+
+html, body
+{
+margin: 0;
+padding: 0;
+text-align: center;
+background-color: #2a2a2a;
+color: #efefef;
+font-size: 13px;
+font-family: Geneva, "Times New Roman", serif;
+}
+
+a:link, a:visited
+{
+
+}
+a:hover {
+
+}
+
+#container_frame
+{
+width: 950px;
+text-align: left;
+margin: 5px auto;
+padding: 10px;
+}
+
+#container
+{
+
+}
+
+#head
+{
+font-weight: bold;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: right;
+margin-bottom: 10px;
+padding: 0 6px;
+}
+
+#menu
+{
+background-color: #202020;
+background-color: transparent;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+margin: 0px;
+padding: 5px;
+}
+
+#menu ul
+{
+padding: 0;
+margin: 0;
+}
+
+#menu ul li
+{
+display: inline;
+padding: 1px 5px 1px 8px;
+margin: 0;
+list-style-type: none;
+border-left: 1px solid #4080FC;
+}
+#menu ul li:first-child
+{
+border-left: none;
+}
+
+#menu a:link, #menu a:visited
+{
+color: #dadada;
+font-size: 13px;
+font-family: Arial, Verdana, serif;
+text-decoration: none;
+}
+
+#menu a:hover, #menu a:active
+{
+text-decoration: underline;
+}
+
+#content
+{
+background-color: #202020;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+padding: 20px;
+}
+
+#foot
+{
+font-size: 11px;
+text-align: center;
+padding: 5px;
+color: #b0b0b0;
+}
+
+#debug
+{
+padding: 5px;
+background-color:  #303030;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+
+.box
+{
+
+}
+
+.center
+{
+margin: 0 auto;
+text-align: center;
+}
+
+/*  noscript page */
+.noscript {
+display: block;
+
+text-align: center;
+}
+
+.noscript div {
+margin: 0 0 10px 0;
+padding: 5px;
+background-color: #1c1c1c;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+cursor: pointer;
+}
+.noscript div:hover {
+background-color: #221111;
+}
+
+.noscript a:link, .noscript a:visited {
+color: darkorange;
+text-decoration: none;
+}
+
+.noscript a:hover {
+color: lavender;
+text-decoration: underline;
+}
+/*
+.rounded_4px
+{
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+*/
+
+/* uploader plugin */
+#uploader_form
+{
+text-align: center;
+}
+
+#uploader_form .uploader_file, #uploader_form  .uploader_submit, #uploader_form .uploader_button
+{
+font-size: 16px;
+}
+
+#uploader_files
+{
+
+}
+
+.uploader_error
+{
+color: darkred;
+padding: 5px;
+font-family: Arial, sans-serif;
+font-size: 16px;
+}
+
+/* ccfg plugin */
+.ccfg_call
+{
+background-color:  #404040;
+margin: 10px 0 0 0;
+padding: 2px 0 4px 6px;
+font-size: 14px;
+
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+.ccfg_call:hover
+{
+background-color: #383d38;
+cursor: pointer;
+}
+
+.ccfg_debug
+{
+margin: 0;
+padding: 10px;
+/*border: 6px solid #404040;*/
+font-size: 11px;
+text-align: left;
+
+/*
+-moz-border-radius-bottomleft: 4px;
+-moz-border-radius-bottomright: 4px;
+-webkit-border-radius-bottomleft: 4px;
+-webkit-border-radius-bottomright: 4px;
+border-radius-bottomleft: 4px;
+border-radius-bottomright: 4px;
+*/
+}
+
+.ccfg_form
+{
+padding: 10px 4px 0 4px;
+text-align: center;
+font-size: 13px;
+line-height: 19px;
+font-family: "Courier New", sans-serif;
+}
+
+.ccfg_form input
+{
+border: 1px solid #3a3a3a;
+}
+.ccfg_form input:focus
+{
+border-color: darkorange;
+}
+
+.ccfg_form h3
+{
+font-size: 16px;
+line-height: normal;
+font-family: Arial, sans-serif;
+margin: 0 0 8px 0;
+}
+
+#ccfg_form_save
+{
+
+
+}
+
+#ccfg_form_save_raw
+{
+
+}
+
+.ccfg_submit, .ccfg_reset
+{
+width: 33%;
+padding: 8px;
+border: 0;
+margin: 8px 0 20px 0;
+
+background-color: #404040;
+color: #f0f0f0;
+cursor: pointer;
+font-weight: bold;
+font-size: 18px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+
+}
+
+.ccfg_submit:hover, .ccfg_submit:focus
+{
+color: #ed3020;
+}
+.ccfg_submit:active
+{
+}
+
+.ccfg_reset:hover, .ccfg_reset:focus
+{
+color: #20ed30;
+}
+.ccfg_reset:active
+{
+}
+
+.ccfg_textarea
+{
+width: 99%;
+height: 500px;
+padding: 3px;
+margin: 8px 0;
+padding: 8px;
+text-align: left;
+color: #ededed;
+background-color: #303030;
+border: 1px solid #4a4a4a;
+}
+.ccfg_textarea:hover, .ccfg_textarea:focus
+{
+}
+ccfg_textarea:active
+{
+}
+
+#the_config, #the_users, #the_db
+{
+background-color: #282828;
+text-align: left;
+padding: 10px;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+}
+
+.ccfg_array_key
+{
+color: #ededed;
+background-color: #3a3a3a;
+border: none;
+padding: 2px 2px 4px 4px;
+font-weight: bold;
+font-family: Arial, sans-serif;
+margin: 2px 0 2px 0;
+text-align: right;
+
+width: 178px;
+}
+.ccfg_array_key:hover, .ccfg_array_key:focus
+{
+}
+.ccfg_array_key:active
+{
+}
+
+.ccfg_array:link, .ccfg_array:visited
+{
+color: #fff0f0;
+text-decoration: none;
+font-family: Arial, sans-serif;
+font-weight: bold;
+/*text-transform: lowercase;*/
+font-size: 13px;
+margin: 4px 0 0 0;
+padding: 3px 10px 5px 20px;
+}
+.ccfg_array:hover
+{
+
+}
+.ccfg_array:hover, .ccfg_array:focus
+{
+border: 1px outset darkorrange;
+color: #dd2030;
+background-color: #3a3a3a;
+text-decoration: none;
+cursor: pointer;
+}
+.ccfg_array:active
+{
+text-decoration: none;
+}
+
+.ccfg_array_box
+{
+padding: 5px 5px 5px 8px;
+margin: 0 0 0 20px;
+background-color: #303030;
+}
+
+.ccfg_key
+{
+color: #ededed;
+background-color: #3a3a3a;
+border: none;
+padding: 2px 2px 2px 2px;
+font-weight: bold;
+font-family: Arial, sans-serif;
+margin: 2px 4px 2px 0;
+width: 180px;
+text-align: right;
+}
+.ccfg_key:hover, .ccfg_key:focus
+{
+}
+.ccfg_key:active
+{
+}
+
+.ccfg_val
+{
+color: #ededed;
+background-color: #363636;
+border: none;
+padding: 2px;
+font-family: Arial, sans-serif;
+margin: 2px 2px 2px 4px;
+width: 180px;
+text-align: left;
+}
+.ccfg_val:hover, .ccfg_val:focus
+{
+
+}
+.ccfg_val:active
+{
+
+}
+
+.ccfg_add
+{
+margin: 0;
+}
+
+.ccfg_add a:link, .ccfg_add a:visited
+{
+font-weight: bold;
+font-size: 16px;
+color: #4080fc;
+text-decoration: none;
+}
+.ccfg_add a:hover, .ccfg_add a:focus
+{
+color: #20dd30;
+text-decoration: none;
+}
+.ccfg_add a:active
+{
+
+}
+
+/* mysql plugin */
+#sql_ui_box
+{
+margin: 0;
+padding: 0;
+}
+
+#sql_ui_box h3
+{
+margin: 0;
+padding: 0;
+}
+
+#sql_ui_box .sql_errors_num
+{
+
+}
+
+#sql_ui_box .sql_errors_msg
+{
+
+}
+
+#sql_ui
+{
+margin: 0;
+padding: 0;
+}
+
+#sql_ui #mysql_query
+{
+margin: 0;
+padding: 0;
+}
+
+#sql_ui #mysql_submit
+{
+
+}
+table.microstat
+{
+color: #010101;
+}
+
+/* users plugin */
+form.login_form
+{
+font-size: 14px;
+font-family: Tahoma, Helvetica, sans-serif;
+
+background-color: #303030;
+text-align: left;
+margin: 0 0 8px 0;
+padding: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+ul.login_inputs
+{
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+ul.login_inputs li
+{
+margin: 0;
+padding: 0 4px;
+border: 0;
+display: inline;
+list-style-type: none;
+
+}
+
+ul.login_inputs li label.input_name
+{
+padding: 0 5px 0 0;
+cursor: pointer;
+}
+
+
+ul.login_inputs li input.login_text, ul.login_inputs li input.login_password
+{
+width: 160px;
+height: 17px;
+color: #bfbfbf;
+font-family: Tahoma, Helvetica, sans-serif;
+font-size: 14px;
+margin: 0;
+padding: 1px;
+border: 1px solid #2d2d2d;
+background-color: #242424;
+}
+
+ul.login_inputs li input.login_text:hover, ul.login_inputs li input.login_text:active, ul.login_inputs li input.login_text:focus, ul.login_inputs li input.login_password:hover, ul.login_inputs li input.login_password:active, ul.login_inputs li input.login_password:focus
+{
+border: 1px solid #4080FC;
+}
+
+ul.login_inputs li input.login_submit
+{
+height: 24px;
+width: 50px;
+color: #bfbfbf;
+font-family: Tahoma, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: bold;
+margin: 0;
+padding: 1px 2px 2px 2px;
+border: 1px solid #282828;
+background-color: #282828;
+text-align: center;
+cursor: pointer;
+}
+ul.login_inputs li input.login_submit:hover, ul.login_inputs li input.login_submit:focus
+{
+color: #4080FC;
+}
+
+ul.login_inputs li.login_text
+{
+
+}
+
+ul.login_inputs li.login_password
+{
+
+
+}
+
+ul.login_inputs li.login_submit
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* "They've bought all the shit that should never be sold
+    They put a gun above it and a narrow. Behold..."
+*/

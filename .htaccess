@@ -1,0 +1,68 @@
+# Handle real errors with index.php
+# no _POST data
+#ErrorDocument 403 /index.php
+#ErrorDocument 404 /index.php
+#
+Order Deny,Allow
+<FilesMatch "\.ht(access|passwd)$">
+Deny from all
+</FilesMatch>
+#
+
+### httpd.conf:
+#  LoadModule rewrite_module modules/mod_rewrite.so
+
+    # Possible values for the Options directive are "None", "All",
+    # or any combination of:
+    #   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+    #
+    # Note that "MultiViews" must be named *explicitly* --- "Options All"
+    # doesn't give it to you.
+    #
+    # The Options directive is both complicated and important.  Please see
+    # http://httpd.apache.org/docs/2.2/mod/core.html#options
+    # for more information.
+    #
+#    Options Indexes FollowSymLinks
+
+    #
+    # AllowOverride controls what directives may be placed in .htaccess files.
+    # It can be "All", "None", or any combination of the keywords:
+    #   Options FileInfo AuthConfig Limit
+    #
+#    AllowOverride Options All
+###
+
+Options +FollowSymLinks
+RewriteEngine on
+
+# serve files and dirs if they exist please, otherwise send to index
+## -d minden létező mappánál megállítja az indexre irányítást; -f minden létező fájlnál megállítja az indexre irányítást
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+##
+
+RewriteCond %{REQUEST_URI} !^/index\.php$
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
+RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js|pdf|doc|xml|swf)$
+
+
+RewriteRule (.*) /index.php [L]
+
+## subdomainel
+#; Colors for Syntax Highlighting mode.  Anything that's acceptable in
+#; <span style="color: ???????"> would work.
+#; http://php.net/syntax-highlighting
+#;highlight.string  = #DD0000
+#;highlight.comment = #FF9900
+#;highlight.keyword = #007700
+#;highlight.bg      = #FFFFFF
+#;highlight.default = #0000BB
+#;highlight.html    = #000000
+
+
+
+
+
+
+
